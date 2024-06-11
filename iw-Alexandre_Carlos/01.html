@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas</title>
+    <link rel="stylesheet" href="css/01.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculo total de aulas</h1>
+        <form id="calculoAulasForm">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+            
+            <label for="valorHoraAula">Valor HORA/AULA</label>
+            <input type="number" id="valorHoraAula" name="valorHoraAula" step="1">
+            
+            <label for="totalHA">Total H/A semanal</label>
+            <input type="number" id="totalHA" name="totalHA">
+            
+            <div class="total">
+                <span>Total Geral: </span>
+                <span id="totalGeral"> 0</span>
+            </div>
+            
+            <button type="button" id="calcularBtn">Calcular</button>
+        </form>
+    </div>
+    <script src="js/01.js"></script>
+</body>
+</html>
